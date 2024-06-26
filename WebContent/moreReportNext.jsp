@@ -62,7 +62,7 @@ background-color:white;
    
     Class.forName("com.mysql.jdbc.Driver");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
-    String sql="select s.studid,s.studname,s.yearid,s.totalfees,s.cfess,f.fees,f.remainfees from student as s inner join feesdetails as f on s.studid=f.studid where s.mediumid=? and s.classid=? and s.yearid=? and s.schclgid=?";
+    String sql="select s.id,s.studname,s.yearid,s.totalfees,s.cfess,f.fees,f.remainfees from student as s inner join feesdetails as f on s.id=f.studid where s.mediumid=? and s.classid=? and s.yearid=? and s.schclgid=?";
     PreparedStatement ps=con.prepareStatement(sql);
     ps.setString(1,cname);
     ps.setString(2,className);

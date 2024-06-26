@@ -53,144 +53,138 @@ opacity:0.8;
 	 <div class="row">
 	 
 	 
-	 <div class="col-sm-3">
-	 <div style="background-color: #ff0000;height:150px;width:95%;">
-	 <p id="p1">New Admission</p><br>
-	 <a href="Registration.jsp" id="a1" style="background-color:#cc0000;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	 </a>
-	 </div>
-	 </div>
-	 
-	 
-	  <div class="col-sm-3">
-	  <div style="background-color: #ff9900;height:150px;width:95%;">
-	  <p id="p1">Student Registration</p><br>
-	  <a href="Registration.jsp" id="a1" style="background-color: #cc7a00;">
-	  More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	  </a>
-	  </div>
-	  </div>
-	  
-	  
-	  <div class="col-sm-3">
-	  <div style="background-color: #00ccff;height:150px;width:95%;">
-	  <p id="p1">Add Student Fees</p><br>
-	  <a href="addfees.jsp" id="a1" style="background-color:  #00bfff;">
-	  More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	  </a>
-	  </div>
-	  </div>
-	 
-	  <div class="col-sm-3">
-	  <div style="background-color: #33cc33;height:150px;width:95%;">
-	  <p id="p1">View Student Fees</p><br>
-	  <a href="studFeesDetails.jsp" id="a1" style="background-color: #29a329;">
-	  More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	  </a>
-	  </div>
-	  </div>
-	 
+<div class="col-sm-3">
+    <div style="background-color: #ff0000; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">New Admission</p>
+        <a href="Registration.jsp" id="a1" style="background-color: #cc0000; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+<div class="col-sm-3">
+    <div style="background-color: #ff9900; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">Student Registration</p>
+        <a href="Registration.jsp" id="a1" style="background-color: #cc7a00; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+<div class="col-sm-3">
+    <div style="background-color: #00ccff; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">Add Student Fees</p>
+        <a href="addfees.jsp" id="a1" style="background-color: #00bfff; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+<div class="col-sm-3">
+    <div style="background-color: #33cc33; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">View Student Fees</p>
+        <a href="studFeesDetails.jsp" id="a1" style="background-color: #29a329; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div> 
    </div>
    
    
     <h2 class="ml-3">Reports</h2>
     <div class="row">
 	 
-	 
-	<div class="col-sm-3">
-    <div style="background-color: #00ccff;height:150px;width:95%;">
-	<p id="p1">All Student Report</p><br>
-	<a href="allStudentList.jsp" id="a1" style="background-color: #00bfff;">
-    More Info <i class="fa-solid fa-circle-arrow-right"></i>
-    </a> 
+<div class="col-sm-3">
+    <div style="background-color: #00ccff; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">All Student Report</p>
+        <a href="allStudentList.jsp" id="a1" style="background-color: #00bfff; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
     </div>
+</div> 
+
+<div class="col-sm-3">
+    <div style="background-color: #66ff33; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">Class Reports</p>
+        <a href="classReports.jsp" id="a1" style="background-color: #40ff00; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
     </div>
-	 
-    <div class="col-sm-3">
-    <div style="background-color:  #66ff33;height:150px;width:95%;">
-    <p id="p1">Class Reports</p><br>
-    <a href="classReports.jsp" id="a1" style="background-color: #40ff00;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	</a>
+</div> 
+
+<div class="col-sm-3">
+    <div style="background-color: #ff0066; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">More Reports</p>
+        <a href="moreReports.jsp" id="a1" style="background-color: #cc0052; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
     </div>
-    </div>
-	 
-    <div class="col-sm-3">
-    <div style="background-color:   #ff0066;height:150px;width:95%;">
-	<p id="p1">More Reports</p><br>
-	<a href="moreReports.jsp" id="a1" style="background-color: #cc0052;">
-	More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	</a>
-    </div>
-	</div>
-	 
+</div> 
 </div>
 	 
 	 <h2 class="ml-3">Stock</h2>
      <div class="row">
      
-     <div class="col-sm-3">
-	 <div style="background-color:#ff0000;height:150px;width:95%;">
-	 <p id="p1">Add Stock</p><br>
-	 <a href="Registration.jsp" id="a1" style="background-color:#cc0000;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	 </a>
-	 </div>
-	 </div>
-	 
-	 <div class="col-sm-3">
-	 <div style="background-color:#ff9900;height:150px;width:95%;">
-	 <p id="p1">Display Stock</p><br>
-	 <a href="Registration.jsp" id="a1" style="background-color: #cc7a00;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	 </a>
-	 </div>
-	 </div>
-	 
-	 <div class="col-sm-3">
-	 <div style="background-color:#009933;height:150px;width:95%;">
-	 <p id="p1">Available Stock</p><br>
-	 <a href="Registration.jsp" id="a1" style="background-color: #006622;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	 </a>
-	 </div>
-	 </div>
-	 
-     </div>
+<div class="col-sm-3">
+    <div style="background-color: #ff0000; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">Add Stock</p>
+        <a href="addStationary.jsp" id="a1" style="background-color: #cc0000; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div> 
+
+<div class="col-sm-3">
+    <div style="background-color: #ff9900; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">Display Stock</p>
+        <a href="DisplayStock.jsp" id="a1" style="background-color: #cc7a00; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div> 
+
+<div class="col-sm-3">
+    <div style="background-color: #009933; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">Available Stock</p>
+        <a href="allStockList.jsp" id="a1" style="background-color: #006622; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div> 
+
+</div>
      
      
      <h2 class="ml-3">Medical Section</h2>
      <div class="row">
      
-     <div class="col-sm-3">
-	 <div style="background-color:#009933;height:150px;width:95%;">
-	 <p id="p1">Add Health Card</p><br>
-	 <a href="Registration.jsp" id="a1" style="background-color: #006622;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	 </a>
-	 </div>
-	 </div>
-	 
-	 <div class="col-sm-3">
-	 <div style="background-color: #ff99cc;height:150px;width:95%;">
-	 <p id="p1">View Health Card</p><br>
-	 <a href="Registration.jsp" id="a1" style="background-color: #ff66b3;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	 </a>
-	 </div>
-	 </div>
-	 
-	 <div class="col-sm-3">
-	 <div style="background-color:#00ccff;height:150px;width:95%;">
-	 <p id="p1">History Health Card</p><br>
-	 <a href="Registration.jsp" id="a1" style="background-color: #00bfff;">
-	 More Info <i class="fa-solid fa-circle-arrow-right"></i>
-	 </a>
-	 </div>
-	 </div>
-	 
-     </div>
+<div class="col-sm-3">
+    <div style="background-color: #009933; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">Add Health Card</p>
+        <a href="healthcard.jsp" id="a1" style="background-color: #006622; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div> 
+
+<div class="col-sm-3">
+    <div style="background-color: #ff99cc; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">View Health Card</p>
+        <a href="healthcardview.jsp" id="a1" style="background-color: #ff66b3; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div> 
+
+<div class="col-sm-3">
+    <div style="background-color: #00ccff; height: 150px; width: 95%; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+        <p id="p1" style="margin: 0;">History Health Card</p>
+        <a href="healthCardHistory.jsp" id="a1" style="background-color: #00bfff; color: white; text-align: center; padding: 5px 10px; text-decoration: none; display: inline-block;">
+            More Info <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+    </div>
+</div> 
+</div>
      
      
 </div>

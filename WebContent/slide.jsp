@@ -12,7 +12,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <h1 style="margin-top:5px;"><a class="navbar-brand" href="index.jsp"><b><i> JSPM</b>Hostel</i><span class="dashboard_text"></span></a></h1>
+            <h1 style="margin-top:5px;"><a class="navbar-brand" href="dashboard.jsp"><b><i> JSPM</b>Hostel</i><span class="dashboard_text"></span></a></h1>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="sidebar-menu">

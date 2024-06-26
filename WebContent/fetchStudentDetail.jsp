@@ -8,7 +8,7 @@ String projectid=request.getParameter("projectid");
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select s.* from student as s inner join addproject as a on a.projectid=s.projectid where a.projectid=?";
+String sql="select s.* from student as s inner join addproject as a on a.id=s.projectid where a.id=?";
 PreparedStatement ps=con.prepareStatement(sql);
 
 ps.setString(1,projectid);
@@ -18,7 +18,7 @@ while(rs.next()){
 	
 	
 	%>
-	<option value="<%=rs.getString("studid") %>"> <%=rs.getString("studname") %></option>
+	<option value="<%=rs.getString("id") %>"> <%=rs.getString("studname") %></option>
 <%
 
 }

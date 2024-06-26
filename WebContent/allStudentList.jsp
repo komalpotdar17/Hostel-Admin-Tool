@@ -72,7 +72,7 @@ color: #737373;
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select * from student order by studid desc";
+String sql="select * from student order by id desc";
 
 PreparedStatement ps=con.prepareStatement(sql); 
 ResultSet rs = ps.executeQuery();
@@ -88,7 +88,7 @@ while(rs.next()){
 <td><%=rs.getString("yearid") %></td>
 <td><%=rs.getString("mediumid") %></td>
 <td><%=rs.getString("classid") %></td>
-<td><span  onclick="window.print();return false;" style="color:green">Print /</span> <a href="CancelReg.jsp?pid=<%=rs.getString("studid")%>" onclick="confirm1();" style="color:red">Cancel Registration</a></td>
+<td><span  onclick="window.print();return false;" style="color:green">Print /</span> <a href="CancelReg.jsp?pid=<%=rs.getString("id")%>" onclick="confirm1();" style="color:red">Cancel Registration</a></td>
 
 </tr>
 <%n++;} %>

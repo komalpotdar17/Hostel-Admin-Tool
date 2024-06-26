@@ -9,7 +9,7 @@
      
       Class.forName("com.mysql.jdbc.Driver");
       Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
-      String sql="select s.studid,s.totalfees,s.cfess,f.fees from student as s left join feesdetails as f on s.studid=f.studid where s.studid=? and s.yearid=?";
+      String sql="select s.id,s.totalfees,s.cfess,f.fees from student as s left join feesdetails as f on s.id=f.studid where s.id=? and s.yearid=?";
       PreparedStatement ps=con.prepareStatement(sql);
       ps.setString(1,sname);
       ps.setString(2,ayear);

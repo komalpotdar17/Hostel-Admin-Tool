@@ -42,7 +42,7 @@
     <tr>
      <%
       String hid=request.getParameter("healthcardId");
-     sql="select h.date, s.studname, s.studmobile, p.projectname,c.classname from healthcard as h inner join student as s on h.studid=s.studid inner join addproject as p on h.projectid=p.projectid inner join addclass as c on s.classid=c.id where h.hid=?";
+     sql="select h.date, s.studname, s.studmobile, p.projectname,c.classname from healthcard as h inner join student as s on h.studid=s.id inner join addproject as p on h.projectid=p.id inner join addclass as c on s.classid=c.id where h.id=?";
    //  sql="select h.date, s.studname, s.studmobile, p.projectname,c.classname,hc.* from healthcard as h inner join student as s on h.studid=s.studid inner join addproject as p on h.projectid=p.projectid inner join addclass as c on s.classid=c.id inner join healthcare as hc on h.hid=hc.hid where h.hid=?";
      ps=con.prepareStatement(sql);
      ps.setString(1,hid);
@@ -80,7 +80,7 @@
     <tr>
      <%
       
-    sql="select hc.* from healthcard as h inner join healthcare as hc on h.hid=hc.hid where h.hid=?";
+    sql="select hc.* from healthcard as h inner join healthcare as hc on h.id=hc.hid where h.id=?";
      ps=con.prepareStatement(sql);
      ps.setString(1,hid);
      rs=ps.executeQuery();

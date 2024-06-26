@@ -80,7 +80,7 @@ padding-top:8px;
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select * from religion order by rid desc";
+String sql="select * from religion order by id desc";
 
 PreparedStatement ps=con.prepareStatement(sql); 
 ResultSet rs = ps.executeQuery();
@@ -93,8 +93,8 @@ while(rs.next()){
 <td><%=rs.getString("rdate") %></td>
 <td><%=rs.getString("rstatus") %></td>
 <!--  
-<td><a href="deleteRecord.jsp?pid=<%=rs.getString("rid")%>">Delete</a></td>
-<td><a href="updateRecord.jsp?pid=<%=rs.getString("rid")%>">Update</a></td>
+<td><a href="deleteRecord.jsp?pid=<%=rs.getString("id")%>">Delete</a></td>
+<td><a href="updateRecord.jsp?pid=<%=rs.getString("id")%>">Update</a></td>
 -->
 </tr>
 <%n++;} %>

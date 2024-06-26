@@ -80,7 +80,7 @@ margin-right:8px;
         while(rs1.next()){
        
         %>
-        <option value="<%=rs1.getString("prodid") %>">
+        <option value="<%=rs1.getString("id") %>">
         <%=rs1.getString("pname") %>
         </option>
         <%} %>
@@ -142,7 +142,7 @@ margin-right:8px;
 		        while(rs.next()){
 		       
 		        %>
-		        <option value="<%=rs.getString("prodid") %>">
+		        <option value="<%=rs.getString("id") %>">
 		        <%=rs.getString("pname") %>
 		        </option>
 		        <%} %>

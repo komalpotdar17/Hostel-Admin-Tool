@@ -6,7 +6,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Medium</title>
 
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
@@ -66,7 +66,7 @@ padding-top:8px;
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select * from medium order by medium_id desc";
+String sql="select * from medium order by id desc";
 
 PreparedStatement ps=con.prepareStatement(sql); 
 ResultSet rs = ps.executeQuery();
@@ -79,8 +79,8 @@ while(rs.next()){
 <td><%=rs.getString("m_date") %></td>
 <td><%=rs.getString("m_status") %></td>
 <!--  
-<td><a href="deleteRecord.jsp?pid=<%=rs.getString("medium_id")%>">Delete</a></td>
-<td><a href="updateRecord.jsp?pid=<%=rs.getString("medium_id")%>">Update</a></td>
+<td><a href="deleteRecord.jsp?pid=<%=rs.getString("id")%>">Delete</a></td>
+<td><a href="updateRecord.jsp?pid=<%=rs.getString("id")%>">Update</a></td>
 -->
 </tr>
 <%n++;} %>

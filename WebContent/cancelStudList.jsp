@@ -5,6 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<title>Cancelled Student List</title>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
 <link rel="stylesheet" href="jquery-ztables-1.2.css" />
@@ -71,7 +72,7 @@ color: #737373;
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select * from student where cancalreg='yes'order by studid desc";
+String sql="select * from student where cancalreg='yes'order by id desc";
 
 PreparedStatement ps=con.prepareStatement(sql); 
 ResultSet rs = ps.executeQuery();
@@ -87,7 +88,7 @@ while(rs.next()){
 <td><%=rs.getString("yearid") %></td>
 <td><%=rs.getString("mediumid") %></td>
 <td><%=rs.getString("classid") %></td>
-<td> <a href="RestoreReg.jsp?pid=<%=rs.getString("studid")%>" onclick="confirm1();" style="color:red">Restore Registration</a></td>
+<td> <a href="RestoreReg.jsp?pid=<%=rs.getString("id")%>" onclick="confirm1();" style="color:red">Restore Registration</a></td>
 
 </tr>
 <%n++;} %>

@@ -8,7 +8,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Add Class</title>
 
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
@@ -65,7 +65,7 @@ padding-top:8px;
              while(rs1.next()){
        
              %>
-          <option values=" <%=rs1.getString("medium_id") %>">
+          <option values=" <%=rs1.getString("id") %>">
           <%=rs1.getString("medium_name") %>
           </option>
           <%} %>

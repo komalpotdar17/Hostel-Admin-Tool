@@ -25,7 +25,7 @@ ResultSet rs = null;
   done = ps.executeUpdate();
   
   if(done>0){
-	  sql = "select sellerid from seller order by sellerid desc limit 1";
+	  sql = "select id from seller order by id desc limit 1";
 	  ps = con.prepareStatement(sql);
 	  rs = ps.executeQuery();
 	  if(rs.next()){
@@ -36,7 +36,7 @@ ResultSet rs = null;
 			  String pquantity=request.getParameter("pquantity"+i);
 			  String price=request.getParameter("price"+i);
 			  String total=request.getParameter("total"+i);
-			  String sellerId = rs.getString("sellerid");
+			  String sellerId = rs.getString("id");
 
 			    sql = "insert into stock(pname, pquantity, price, total, sellerid)values(?, ?, ?, ?, ?)";
 			     ps = con.prepareStatement(sql);

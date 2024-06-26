@@ -9,7 +9,7 @@ String studentId=request.getParameter("pid");
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="update student set cancalreg='no' where studid=?";
+String sql="update student set cancalreg='no' where id=?";
 
 PreparedStatement ps=con.prepareStatement(sql);
 

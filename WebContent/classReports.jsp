@@ -65,7 +65,7 @@ color: #737373;
         while(rs.next()){
        
         %>
-        <option value="<%=rs.getString("yid") %>">
+        <option value="<%=rs.getString("id") %>">
         <%=rs.getString("year") %>
         </option>
         <%} %>
@@ -83,7 +83,7 @@ color: #737373;
         while(rs1.next()){
        
         %>
-        <option value="<%=rs1.getString("medium_id") %>">
+        <option value="<%=rs1.getString("id") %>">
         <%=rs1.getString("medium_name") %>
         </option>
         <%} %>
@@ -127,7 +127,7 @@ color: #737373;
         while(rs3.next()){
        
         %>
-        <option value="<%=rs3.getString("projectid") %>">
+        <option value="<%=rs3.getString("id") %>">
         <%=rs3.getString("projectname") %>
         </option>
         <%} %>

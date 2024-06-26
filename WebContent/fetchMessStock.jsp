@@ -11,7 +11,7 @@
       
       Class.forName("com.mysql.jdbc.Driver");
       Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
-      String sql="select sl.sname,sl.sdate,st.pname,st.pquantity,st.price,st.total from seller as sl inner join stock as st on sl.sellerid=st.sellerid where sl.sdate between ? and ?";
+      String sql="select sl.sname,sl.sdate,st.pname,st.pquantity,st.price,st.total from seller as sl inner join stock as st on sl.id=st.sellerid where sl.sdate between ? and ?";
       PreparedStatement ps=con.prepareStatement(sql);
       ps.setString(1,startdate);
       ps.setString(2,enddate);

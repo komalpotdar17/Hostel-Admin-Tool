@@ -9,7 +9,7 @@ String password=request.getParameter("password");
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select * from admin where username=? and pass=?";
+String sql="select * from admin where username=? and password=?";
 PreparedStatement ps=con.prepareStatement(sql);
 ps.setString(1,username);
 ps.setString(2,password);

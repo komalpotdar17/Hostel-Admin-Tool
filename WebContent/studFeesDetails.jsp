@@ -52,7 +52,7 @@ padding-top:8px;
         while(rs1.next()){
        
         %>
-        <option value="<%=rs1.getString("studid") %>">
+        <option value="<%=rs1.getString("id") %>">
         <%=rs1.getString("studname") %>
         </option>
         <%} %>
@@ -70,7 +70,7 @@ padding-top:8px;
         while(rs2.next()){
        
         %>
-        <option values=" <%=rs2.getString("studid") %>">
+        <option values=" <%=rs2.getString("id") %>">
         <%=rs2.getString("yearid") %>
         </option>
         <%} %>

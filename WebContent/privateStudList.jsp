@@ -71,7 +71,7 @@ color: #737373;
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select * from student where studtype='private' order by studid desc";
+String sql="select * from student where studtype='private' order by id desc";
 
 PreparedStatement ps=con.prepareStatement(sql); 
 ResultSet rs = ps.executeQuery();

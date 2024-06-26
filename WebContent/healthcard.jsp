@@ -80,7 +80,7 @@ b{
         while(rs2.next()){
        
         %>
-        <option value="<%=rs2.getString("studid") %>">
+        <option value="<%=rs2.getString("id") %>">
         <%=rs2.getString("studname") %>
         </option>
         <%} %>

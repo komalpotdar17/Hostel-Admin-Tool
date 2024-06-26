@@ -17,7 +17,7 @@ String sname=request.getParameter("sname");
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select m.medium_name ,c.classname ,s.* from student as s inner join  addclass as c on c.id=s.classid inner join medium as m on m.medium_id=s.mediumid where s.studid=?";
+String sql="select m.medium_name ,c.classname ,s.* from student as s inner join  addclass as c on c.id=s.classid inner join medium as m on m.medium_id=s.mediumid where s.id=?";
 
 PreparedStatement ps=con.prepareStatement(sql);
 

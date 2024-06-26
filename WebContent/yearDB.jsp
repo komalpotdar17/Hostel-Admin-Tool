@@ -14,7 +14,7 @@ String year=request.getParameter("year");
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="insert into year( year, date, status)values(?,'09/08/2022','Activate')";
+String sql="insert into year(year, date, status)values(?,'09/08/2022','Activate')";
 
 PreparedStatement ps=con.prepareStatement(sql);
 

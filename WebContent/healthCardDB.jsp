@@ -39,7 +39,7 @@
    if(done>0){
 	   
 	   
-	   sql="select hid from healthcard order by hid desc limit 1";
+	   sql="select id from healthcard order by id desc limit 1";
 	   ps=con.prepareStatement(sql);
 	   rs=ps.executeQuery();
 	   

@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>College</title>
 
 <!-- Latest compiled and minified CSS -->
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -81,7 +81,7 @@ padding-top:8px;
 Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
 
-String sql="select * from college order by cid desc";
+String sql="select * from college order by id desc";
 
 PreparedStatement ps=con.prepareStatement(sql); 
 ResultSet rs = ps.executeQuery();
@@ -94,8 +94,8 @@ while(rs.next()){
 <td><%=rs.getString("cdate") %></td>
 <td><%=rs.getString("cstatus") %></td>
 <!--  
-<td><a href="deleteRecord.jsp?pid=<%=rs.getString("cid")%>">Delete</a></td>
-<td><a href="updateRecord.jsp?pid=<%=rs.getString("cid")%>">Update</a></td>
+<td><a href="deleteRecord.jsp?pid=<%=rs.getString("id")%>">Delete</a></td>
+<td><a href="updateRecord.jsp?pid=<%=rs.getString("id")%>">Update</a></td>
 -->
 </tr>
 <%n++;} %>

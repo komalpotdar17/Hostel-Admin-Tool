@@ -40,7 +40,7 @@
       
       Class.forName("com.mysql.jdbc.Driver");
      Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata","root","root");
-     String sql="select h.date,h.hid, s.studname, s.studmobile, p.projectname,c.classname from healthcard as h inner join student as s on h.studid=s.studid inner join addproject as p on h.projectid=p.projectid inner join addclass as c on s.classid=c.id";
+     String sql="select h.date,h.id, s.studname, s.studmobile, p.projectname,c.classname from healthcard as h inner join student as s on h.studid=s.id inner join addproject as p on h.projectid=p.projectid inner join addclass as c on s.classid=c.id";
      PreparedStatement ps=con.prepareStatement(sql);
      ResultSet rs=ps.executeQuery();
    
